@@ -1,5 +1,5 @@
 
-import Header from './components/Header';
+import Home from './components/Home';
 import { ContextDataProvider } from './context/DataContext';
 
 
@@ -7,7 +7,7 @@ function App() {
   return (   
     <ContextDataProvider>
           <div className="fit-screen">
-              <Header/>             
+              <Home/>             
           </div>
     </ContextDataProvider>    
   );

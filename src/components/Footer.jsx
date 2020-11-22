@@ -1,13 +1,14 @@
   
 import React, { useContext } from 'react'
-import Navbar from './Navbar'
 
-function Header() { 
+
+function Footer() {
+  
     return (
        <div>
-           <Navbar/>
+           Hola
        </div>
     )
 }
 
-export default Header
+export default Footer

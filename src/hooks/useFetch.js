@@ -11,7 +11,7 @@ export const useFetch = (url, config) => {
              .then(response => {
                  setState({
                           data: {
-                              casas: response.data                              
+                              cotizaciones: response.data                              
                           },
                           loading: false, 
                           error: ''
