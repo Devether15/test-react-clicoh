@@ -1,6 +1,5 @@
 import React from 'react'
 import './cotizacion.css'
-import Card from "react-bootstrap/Card";
 
 function Cotizacion({nombre, compra, venta}) {
     // console.log(nombre, compra, venta)

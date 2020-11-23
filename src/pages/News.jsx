@@ -1,7 +1,7 @@
 import React from 'react'
-import './Clima.css'
+import './news.css'
 
-function Clima({author, content,title,date,image}) {
+function News({author, content,title,date,image}) {
     console.log(title)
     return (
         <div class="example-1 card">
@@ -13,7 +13,7 @@ function Clima({author, content,title,date,image}) {
                     <div class="content">
                         <span class="author">{author}</span>
                         <h1 class="title"><a href="#">{title}</a></h1>
-                        <p class="text">Olympic gold medals contain only about 1.34 percent gold, with the rest composed of sterling silver.</p>
+                        <p class="text">{content}</p>
                         <label for="show-menu" class="menu-button"><span></span></label>
                     </div>
                     <input type="checkbox" id="show-menu" />
@@ -30,4 +30,4 @@ function Clima({author, content,title,date,image}) {
     )
 }
 
-export default Clima
+export default News

@@ -3,7 +3,7 @@ import { Fragment } from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import Cotizaciones from '../pages/Cotizaciones'
-import Climas from '../pages/Climas'
+import NewsContainer from '../pages/NewsContainer'
 
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
   <Fragment>
   <Header/>
   <Cotizaciones/>
-  <Climas/>
+  <NewsContainer/>
   <Footer/>
   </Fragment>
  )

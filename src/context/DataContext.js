@@ -6,12 +6,12 @@ export const ContextData = React.createContext(null);
 export const ContextDataProvider = (props) => {
 
   const {data, loading, error} = useFetch()
-  const {climas, cotizaciones} = data
-  console.log(climas)
+  const {news, cotizaciones} = data
+  console.log(news)
   console.log(cotizaciones);
   
   return (
-    <ContextData.Provider value={{climas,cotizaciones, loading, error}}>
+    <ContextData.Provider value={{news,cotizaciones, loading, error}}>
       {props.children}
     </ContextData.Provider>
   );
