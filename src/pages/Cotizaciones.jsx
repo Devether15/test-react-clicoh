@@ -10,16 +10,16 @@ function Cotizaciones() {
    const {cotizaciones}= useContext(ContextData)  
     // console.log(data.casas)
     return (
- <Fragment>    
-    <div className="container-slider">
-        <Slider {...oneSettings}>
-            {cotizaciones && cotizaciones.map(cotizacion => {                              
-                const {nombre, compra, venta} = cotizacion.casa;
-                return <Cotizacion nombre={nombre} compra={compra} venta={venta}/>
-            })}
-        </Slider>
-    </div>
-</Fragment>
+        <Fragment>    
+            <div className="container-slider">
+                <Slider {...oneSettings}>
+                    {cotizaciones && cotizaciones.map(cotizacion => {                              
+                        const {nombre, compra, venta} = cotizacion.casa;
+                        return <Cotizacion nombre={nombre} compra={compra} venta={venta}/>
+                    })}
+                </Slider>
+            </div>
+        </Fragment>
     )
 }
 

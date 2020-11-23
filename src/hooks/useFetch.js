@@ -4,7 +4,7 @@ import axios from 'axios'
 
 export const urlCotizaciones = 'https://www.dolarsi.com/api/api.php?type=valoresprincipales';
 
-export const urlWeather = 'https://api.openweathermap.org/data/2.5/weather?q=argentina&appid=9023f60df840b15465ca512c913495ab';
+export const urlWeather = 'https://newsapi.org/v2/everything?q=bitcoin&from=2020-10-23&sortBy=publishedAt&apiKey=75cf29900ec8467c82b9ff0f9985b9ff';
 
 export const config = {
     method: 'GET',
@@ -27,7 +27,7 @@ export const useFetch = () => {
                 setState({
                     data: {
                         cotizaciones: urlCotizaciones.data,
-                        climas: urlWeather.data,                        
+                        climas: urlWeather.data.articles,                        
                     },
                     loading: false, 
                     error: ''
