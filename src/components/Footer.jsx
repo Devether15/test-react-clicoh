@@ -1,12 +1,12 @@
   
-import React, { useContext } from 'react'
-
+import React from 'react'
+import './styles.css'
 
 function Footer() {
   
     return (
-       <div>
-           Hola
+       <div className="footer">
+           <p className="footer-text">Infot today | All rights reserved ©</p>
        </div>
     )
 }

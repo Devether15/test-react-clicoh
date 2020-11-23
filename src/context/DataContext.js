@@ -1,15 +1,17 @@
 import React from 'react'
 import { useFetch } from '../hooks/useFetch';
-import { url, config} from '../settings/requestSettings'
 
 export const ContextData = React.createContext(null); 
 
 export const ContextDataProvider = (props) => {
 
-  const {data, loading, error} = useFetch(url, config)
+  const {data, loading, error} = useFetch()
+  const {climas, cotizaciones} = data
+  console.log(climas)
+  console.log(cotizaciones);
   
   return (
-    <ContextData.Provider value={{data, loading, error}}>
+    <ContextData.Provider value={{climas,cotizaciones, loading, error}}>
       {props.children}
     </ContextData.Provider>
   );
